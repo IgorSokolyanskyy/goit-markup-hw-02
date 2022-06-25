@@ -1,27 +1,170 @@
 :root {
   --primary-text-colot: rgba(33, 33, 33, 1);
   --title-text-color: rgba(117, 117, 117, 1);
-  --background-color: #E5E5E5;
+  --background-color: #F5F4FA;
+  --primary-white-color: #FFFFFF;
   --accent-color: rgba(33, 150, 243, 1);
+
 }
 
 /* вторичный цвет фона #F5F4FA*/
 /* цвет подвала #2F303A */
 
 body {
-  background-color: #E5E5E5;
+  background-color: var(--background-color);
+  color: var(--primary-text-colot);
+
+  font-family: Roboto, sans-serif;
 }
 
+
+/* улитита */
 .list {
   list-style: none;
 }
 
-/* site-nav */
-.site-nav li {
-  color: rgba(33, 33, 33, 1)
+
+/* Шапка */
+
+/* Logo */
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
-.site-nav li:hover,
-.site-nav li:focus {
-  color: rgba(33, 150, 243, 1);
+/* site-nav */
+.site-nav .link {
+  color: var(--primary-text-colot);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* auth-nav */
+.auth-nav .link {
+  color: var(--primary-text-colot);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+
+/* Стили для htkl */
+
+/* Hero */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Кнопка */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* описание работы */
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.section-text {
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* заголовки */
+.section-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* имена коллег */
+.section-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* работа коллег */
+.section-work {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+
+/* Стили для пордфолио */
+
+/* Фильтки / Кнопки */
+.portfolio-button {
+  color: var(--primary-text-colot);
+  background-color: var(--background-color);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* список продукции */
+.section-production {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section-more {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
