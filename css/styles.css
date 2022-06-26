@@ -28,12 +28,18 @@ body {
 
 /* Logo */
 .logo {
+  color: var(--accent-color);
+
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+
+.logo-studio {
+  color: black;
 }
 
 /* site-nav */
@@ -57,7 +63,7 @@ body {
 
 /* auth-nav */
 .auth-nav .link {
-  color: var(--primary-text-colot);
+  color: #757575;
 }
 
 .auth-nav .link:hover,
@@ -100,6 +106,7 @@ body {
 }
 
 .section-text {
+  color: #757575;
 
   font-size: 14px;
   line-height: 1.7;
@@ -125,6 +132,8 @@ body {
 
 /* работа коллег */
 .section-work {
+  color: #757575;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -163,8 +172,20 @@ body {
 }
 
 .section-more {
+  color: #757575;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+/* футер */
+.address {
+  color: #FFFFFF;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
