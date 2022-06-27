@@ -20,6 +20,9 @@ body {
   letter-spacing: 0.03em;
 }
 
+p {
+  color: var(--title-text-color);
+}
 
 /* улитита */
 .list {
@@ -121,9 +124,6 @@ body {
 
 }
 
-.section-text {
-  color: var(--title-text-color);
-}
 
 /* заголовки */
 .section-heading {
@@ -151,8 +151,6 @@ body {
 
 /* работа коллег */
 .section-work {
-  color: var(--title-text-color);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -189,8 +187,6 @@ body {
 }
 
 .section-more {
-  color: var(--title-text-color);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
