@@ -1,7 +1,7 @@
 :root {
   --primary-text-colot: rgba(33, 33, 33, 1);
-  --title-text-color: rgba(117, 117, 117, 1);
-  --background-color: #F5F4FA;
+  --title-text-color: rgb(117, 117, 117);
+  --background-color: rgba(229, 229, 229, 1);
   --primary-white-color: #FFFFFF;
   --accent-color: rgba(33, 150, 243, 1);
 
@@ -11,10 +11,14 @@
 /* цвет подвала #2F303A */
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--primary-white-color);
   color: var(--primary-text-colot);
 
+
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 
@@ -31,11 +35,12 @@ body {
   color: var(--accent-color);
 
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  text-decoration: none;
 }
 
 .logo-studio {
@@ -47,9 +52,10 @@ body {
   color: var(--primary-text-colot);
 
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -63,7 +69,13 @@ body {
 
 /* auth-nav */
 .auth-nav .link {
-  color: #757575;
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
 
 .auth-nav .link:hover,
@@ -75,7 +87,13 @@ body {
 /* Стили для htkl */
 
 /* Hero */
+.section-hero {
+  background-color: rgba(47, 48, 58, 1);
+}
+
 .hero-title {
+  color: var(--primary-white-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -100,26 +118,29 @@ body {
 /* описание работы */
 .section-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+
 }
 
 .section-text {
-  color: #757575;
-
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 /* заголовки */
 .section-heading {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.7;
   text-align: center;
-  letter-spacing: 0.03em;
+}
+
+/* наша команда */
+.section-command {
+  background-color: rgba(245, 244, 250, 1);
+}
+
+/* карточки команды */
+.section-card {
+  background-color: var(--primary-white-color);
 }
 
 /* имена коллег */
@@ -127,17 +148,15 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 /* работа коллег */
 .section-work {
-  color: #757575;
+  color: var(--title-text-color);
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 
@@ -154,7 +173,6 @@ body {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .portfolio-button:hover,
@@ -172,20 +190,24 @@ body {
 }
 
 .section-more {
-  color: #757575;
+  color: var(--title-text-color);
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
 }
 
 /* футер */
-.address {
-  color: #FFFFFF;
+.footer {
+  background-color: rgba(47, 48, 58, 1);
+}
 
+.logo-footer {
+  color: var(--primary-white-color);
+}
+
+.address {
+  color: var(--primary-white-color);
+  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 }
