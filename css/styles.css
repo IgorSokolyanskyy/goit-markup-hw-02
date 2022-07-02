@@ -1,18 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-text-colot: rgba(33, 33, 33, 1);
   --title-text-color: rgb(117, 117, 117);
-  --primary-white-color: #FFFFFF;
+  --primary-white-color: #ffffff;
   --accent-color: rgba(33, 150, 243, 1);
-
 }
-
-/* вторичный цвет фона #F5F4FA*/
-/* цвет подвала #2F303A */
 
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-colot);
-
 
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -20,27 +19,58 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 p {
   color: var(--title-text-color);
+  font-weight: 400;
 }
 
 /* улитита */
 .list {
   list-style: none;
+  padding: 0;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Шапка */
+
+/* контейнер нав */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.maim-nav {
+  display: flex;
+  align-items: center;
+}
 
 /* Logo */
 .logo {
   color: var(--accent-color);
-
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 
   text-decoration: none;
 }
@@ -50,9 +80,22 @@ p {
 }
 
 /* site-nav */
-.site-nav .link {
-  color: var(--primary-text-colot);
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-colot);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -70,7 +113,20 @@ p {
 }
 
 /* auth-nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
 .auth-nav .link {
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
@@ -85,65 +141,130 @@ p {
   color: var(--accent-color);
 }
 
-
 /* Стили для htkl */
 
-/* Hero */
+/* Герой */
 .section-hero {
   background-color: rgba(47, 48, 58, 1);
+  text-align: center;
 }
 
 .hero-title {
-  color: var(--primary-white-color);
+  margin-bottom: 30px;
 
+  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
+
   letter-spacing: 0.06em;
 }
 
 /* Кнопка */
 .button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
 
-  font-family: inherit;
+  /* font-family: inherit; */
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
 /* описание работы */
-.section-title {
-  font-weight: 700;
-  line-height: 1.14;
 
+.section-description {
+  padding-top: 89px;
+  padding-bottom: 94px;
 }
 
+.section-items {
+  display: flex;
+  justify-content: space-between;
+}
 
-/* заголовки */
+.section-items .item + .item {
+  margin-left: 30px;
+}
+
+.item-description {
+  width: 270px;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+}
+
+/* наши услуги */
+.section-services {
+  padding-bottom: 94px;
+}
+
 .section-heading {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   text-align: center;
 }
 
+.section-foto-works {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* наша команда */
 .section-command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: rgba(245, 244, 250, 1);
 }
 
 /* карточки команды */
+
+.container-command {
+  justify-content: space-between;
+}
+
+.section-list {
+  display: flex;
+  width: 270px;
+
+  text-align: center;
+}
+
+.section-list .section-card + .section-card {
+  margin-left: 30px;
+}
+
 .section-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
   background-color: var(--primary-white-color);
+}
+
+.faces {
+  margin-bottom: 30px;
 }
 
 /* имена коллег */
 .section-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -151,25 +272,45 @@ p {
 
 /* работа коллег */
 .section-work {
+  padding-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
 
-
 /* Стили для пордфолио */
 
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Фильтки / Кнопки */
+.button-items {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 34px;
+}
+
+.button-items .button-item + .button-item {
+  margin-left: 8px;
+}
+
+.button-items .portfolio-button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+}
+
 .portfolio-button {
   color: var(--primary-text-colot);
-  background-color: var(--background-color);
+  background-color: rgba(245, 244, 250, 1);
   cursor: pointer;
-
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
 }
 
 .portfolio-button:hover,
@@ -178,8 +319,45 @@ p {
   background-color: var(--accent-color);
 }
 
-/* список продукции */
+/* наши услуги */
+.services {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.border {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.services-items {
+  /* width: 370px; */
+  width: calc((100 - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+.foto-services {
+  display: block;
+}
+
+.services-items:nth-child(3n) {
+  margin-right: 0;
+}
+
+.services-items:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .section-production {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -193,16 +371,56 @@ p {
 }
 
 /* футер */
+
 .footer {
   background-color: rgba(47, 48, 58, 1);
 }
+.footet-page {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 60px;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--accent-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
 
 .logo-footer {
+  margin-bottom: 20px;
   color: var(--primary-white-color);
+}
+
+.footer-auth-nav li {
+  margin-bottom: 6px;
 }
 
 .address {
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 400;
+}
+
+.footer-auth-nav .link-contacts {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.footer-auth-nav .link-contacts:hover,
+.footer-auth-nav .link-contacts:focus {
+  color: var(--accent-color);
 }
