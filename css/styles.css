@@ -3,10 +3,10 @@ html {
 }
 
 :root {
-  --primary-text-colot: rgba(33, 33, 33, 1);
-  --title-text-color: rgb(117, 117, 117);
+  --primary-text-colot: #212121;
+  --title-text-color: #757575;
   --primary-white-color: #ffffff;
-  --accent-color: rgba(33, 150, 243, 1);
+  --accent-color: #2196f3;
 }
 
 body {
@@ -54,7 +54,8 @@ p {
 /* контейнер нав */
 .page-header {
   display: flex;
-  justify-content: space-between;
+
+  /* justify-content: space-between; */
 
   border-bottom: 1px solid #ececec;
 }
@@ -114,16 +115,20 @@ p {
 
 /* auth-nav */
 .auth-nav {
-  display: flex;
+  display: inline-flex;
+
   margin-left: auto;
 }
 
-.auth-nav .item + .item {
+.auth-nav .item-autn-nan + .item-autn-nan {
   margin-left: 50px;
 }
 
-.auth-nav .link {
-  display: block;
+.auth-nav .link,
+.icon-mail,
+.icon-tel {
+  display: inline-flex;
+  align-items: center;
   padding-top: 33px;
   padding-bottom: 32px;
 
@@ -141,15 +146,47 @@ p {
   color: var(--accent-color);
 }
 
+.icon-mail::before {
+  content: '';
+
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../images/icons.svg/envelope.svg);
+  background-position: center;
+}
+
+.icon-tel::before {
+  content: '';
+
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/icons.svg/smartphone.svg);
+  background-position: center;
+  background-size: contain;
+}
+
 /* Стили для htkl */
 
 /* Герой */
 .section-hero {
+  width: 1600px;
+  height: 600px;
+  background-color: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   text-align: center;
-  background-color: rgba(47, 48, 58, 1);
 }
 .main-hero {
   width: 696px;
+
   padding-top: 200px;
 }
 
@@ -202,6 +239,36 @@ p {
 
 .item-description {
   width: 270px;
+}
+
+.item-description::before {
+  display: block;
+  content: '';
+
+  height: 120px;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: #f5f4fa;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icons.svg/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icons.svg/clock.svg);
+}
+.icon-rectangel::before {
+  background-image: url(../images/icons.svg/rectangle.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/icons.svg/astronaut.svg);
 }
 
 .section-title {
@@ -278,11 +345,19 @@ p {
 
 /* работа коллег */
 .section-work {
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.networks-items {
+  margin-bottom: 30px;
+}
+
+.networks-item {
+  margin-right: 10px;
 }
 
 /* Стили для пордфолио */
@@ -374,6 +449,10 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+}
+
+.networks-items {
+  display: inline-flex;
 }
 
 /* футер */
