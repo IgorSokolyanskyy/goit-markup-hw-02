@@ -19,6 +19,7 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* улититы */
 h1,
 h2,
 h3,
@@ -34,7 +35,6 @@ p {
   font-weight: 400;
 }
 
-/* улитита */
 .list {
   list-style: none;
   padding: 0;
@@ -54,9 +54,6 @@ p {
 /* контейнер нав */
 .page-header {
   display: flex;
-
-  /* justify-content: space-between; */
-
   border-bottom: 1px solid #ececec;
 }
 
@@ -235,10 +232,9 @@ p {
 
 .section-items {
   display: flex;
-  justify-content: space-between;
 }
 
-.section-items .item + .item {
+.section-items .item-description + .item-description {
   margin-left: 30px;
 }
 
@@ -421,7 +417,8 @@ p {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
+/* .clients-items .clients-item + .clients-item { margin-left: 30px;
+} */
 .clients-item:last-child {
   margin-right: 0;
 }
