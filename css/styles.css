@@ -592,11 +592,11 @@ a {
   color: var(--primary-white-color);
 }
 
-.footer-auth-nav {
-  margin-top: 9px;
+.contacts-item {
+  margin-bottom: 9px;
 }
 .contacts-item:last-child {
-  margin-top: 9px;
+  margin-bottom: 0;
 }
 .address {
   color: var(--primary-white-color);
