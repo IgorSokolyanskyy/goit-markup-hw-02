@@ -35,6 +35,10 @@ p {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -72,8 +76,6 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
-  text-decoration: none;
 }
 
 .logo-studio {
@@ -100,8 +102,6 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -135,8 +135,6 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
 
 .auth-nav .icon-contacts:hover,
@@ -587,8 +585,6 @@ p {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
-  text-decoration: none;
 }
 
 .logo-footer {
@@ -614,8 +610,6 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
 
 .footer-auth-nav .link-contacts:hover,
