@@ -619,10 +619,6 @@ a {
 
 /* присоединяйтесь */
 
-.footer-join {
-  padding-top: 10px;
-}
-
 .join-items {
   display: flex;
 }
@@ -651,9 +647,7 @@ a {
 
   width: 44px;
   height: 44px;
-  /* margin-right: 10px; */
 
-  /* border: none; */
   border-radius: 50%;
 
   fill: var(--primary-white-color);
